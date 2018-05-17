@@ -70,11 +70,12 @@ def screen():
     #Vérifie si il y a une notification a afficher. 
     if mes:
         pins.red() #Allume la led rouge
-        mylcd.lcd_display_string("%d", % (unicode.unidecode(m["messages"]["message"][0]["content"]))
+        mylcd.lcd_display_string("%d", % (unicode.unidecode(m["messages"]["message"][0]["content"]),1)
         
     else:
         pins.redoff() 
-    
+        mylcd.lcd_display_string("Aucune",2,3)
+        mylcd.lcd_display_string("perturbation",2,3)
 
 
 numbers()
