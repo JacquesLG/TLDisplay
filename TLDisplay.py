@@ -75,7 +75,7 @@ def screen():
     else:
         pins.redoff() 
         mylcd.lcd_display_string("Aucune",2,3)
-        mylcd.lcd_display_string("perturbation",2,3)
+        mylcd.lcd_display_string("perturbation",3,3)
 
 
 numbers()
